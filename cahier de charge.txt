@@ -1,0 +1,2413 @@
+CAHIER DES CHARGES — CITY HÔTEL
+
+
+Coordonnées fournies
+📧 Email : cityhotel501@gmail.com
+📱 Téléphone 1 : +261 32 11 073 18
+📱 Téléphone 2 : +261 38 30 209 50
+💬 WhatsApp : +261 32 11 073 18
+📘 Facebook : City Hôtel
+📍 Adresse : 25 Boulevard de l'OUA, Toamasina
+2. Objectifs du site
+
+Le site doit :
+
+présenter City Hôtel de manière professionnelle ;
+mettre en valeur les chambres ;
+afficher les tarifs ;
+présenter les équipements ;
+montrer les photos réelles de l'hôtel ;
+présenter l'emplacement ;
+permettre de contacter rapidement l'hôtel ;
+faciliter les demandes de réservation ;
+être parfaitement adapté aux smartphones ;
+donner une image élégante, moderne et haut de gamme.
+
+Le site ne comportera pas de système de réservation avec disponibilité en temps réel, ni de paiement en ligne.
+
+La réservation se fera par :
+
+WhatsApp → Messenger → Appel téléphonique
+
+3. Identité visuelle
+
+Le logo est principalement doré + noir/blanc. Il faut donc construire tout le site autour d'une identité hôtel premium, élégante et sobre.
+
+Palette recommandée
+Élément	Couleur
+Or principal	#C6A15B
+Or clair	#D8BD7A
+Or foncé	#9B7735
+Noir élégant	#171717
+Blanc	#FFFFFF
+Ivoire	#FAF8F2
+Gris texte	#555555
+Gris clair	#F3F1EB
+Utilisation
+
+Or :
+
+boutons principaux ;
+éléments décoratifs ;
+icônes importantes ;
+lignes et séparateurs ;
+effets au survol.
+
+Noir :
+
+navigation ;
+footer ;
+titres importants ;
+certaines sections premium.
+
+Blanc / ivoire :
+
+arrière-plan principal ;
+cartes ;
+espaces autour des photos.
+Style général
+
+Luxury / Elegant / Modern / Minimal / Hotel Premium
+
+Éviter un design trop chargé.
+
+4. Typographie
+
+Pour avoir un rendu hôtelier haut de gamme :
+
+Titres
+
+Playfair Display
+
+Exemple :
+
+CITY HÔTEL
+Votre confort, notre priorité.
+
+Texte
+
+Montserrat ou Inter
+
+Exemple :
+
+Découvrez nos chambres confortables au cœur de Toamasina.
+
+Cette combinaison donne un aspect beaucoup plus professionnel qu'une police classique.
+
+5. Technologies
+
+Je te recommande :
+
+Frontend
+React.js
+Vite
+Tailwind CSS
+JavaScript
+Lucide React pour les icônes
+Framer Motion pour les animations
+Hébergement
+Netlify ou Vercel
+Hébergement gratuit
+Pas de serveur nécessaire
+Pas besoin
+
+❌ PHP
+❌ MySQL
+❌ Node.js backend
+❌ API
+❌ système d'administration
+❌ système de réservation complexe
+
+Pour ce projet, un frontend React suffit.
+
+6. Installation du projet
+
+Dans CMD :
+
+npm create vite@latest city-hotel -- --template react
+
+Puis :
+
+cd city-hotel
+npm install
+
+Installer Tailwind :
+
+npm install tailwindcss @tailwindcss/vite
+
+Installer les icônes :
+
+npm install lucide-react
+
+Installer les animations :
+
+npm install framer-motion
+
+Puis lancer :
+
+npm run dev
+
+Le projet sera normalement disponible sur :
+
+http://localhost:5173
+7. Structure du projet
+
+Je te conseille cette structure :
+
+city-hotel/
+│
+├── public/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── hotel.jpg
+│   │   ├── chambres/
+│   │   ├── galerie/
+│   │   └── services/
+│   │
+│   └── favicon.png
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Rooms.jsx
+│   │   ├── RoomCard.jsx
+│   │   ├── Services.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Location.jsx
+│   │   ├── Contact.jsx
+│   │   ├── ReservationCTA.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── data/
+│   │   ├── rooms.js
+│   │   └── services.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── vite.config.js
+8. Navigation
+
+La barre de navigation doit être élégante et simple.
+
+Logo
+
+À gauche :
+
+CITY HÔTEL
+
+avec le logo fourni.
+
+Menu
+Accueil
+L'Hôtel
+Chambres
+Services
+Galerie
+Localisation
+Contact
+
+À droite :
+
+Réserver / Nous contacter
+
+Bouton doré.
+
+Mobile
+
+Sur smartphone :
+
+☰ Menu hamburger
+
+Le menu doit devenir un menu mobile propre.
+
+9. Page d'accueil — HERO
+
+C'est la partie la plus importante du site.
+
+Utiliser une très belle photo réelle de l'hôtel ou d'une chambre comme arrière-plan.
+
+Exemple de contenu
+
+CITY HÔTEL
+
+Votre confort, notre priorité.
+
+Texte :
+
+Situé au cœur de Toamasina, City Hôtel vous accueille dans un cadre confortable et pratique, adapté aux séjours en famille, en couple ou professionnels.
+
+Boutons :
+
+RÉSERVER / CONTACTER
+
+et
+
+DÉCOUVRIR NOS CHAMBRES
+
+Design
+
+Image plein écran.
+
+Overlay noir légèrement transparent.
+
+Titre blanc.
+
+Petits détails dorés.
+
+Animation d'apparition au chargement.
+
+10. Section présentation
+
+Titre :
+
+Bienvenue à City Hôtel
+
+Texte fourni par la cliente :
+
+City Hôtel vous accueille en plein cœur de Toamasina, dans un emplacement idéal, face à la station Total et à proximité de la mairie.
+
+Un établissement pensé pour vous offrir confort, tranquillité et praticité, que ce soit pour un séjour en famille, en couple ou professionnel.
+
+À côté :
+
+Une belle photo de l'hôtel.
+
+Petit élément visuel
+✦
+Votre confort,
+Notre priorité.
+11. Section Chambres
+
+Titre :
+
+Nos chambres
+
+Sous-titre :
+
+Des espaces confortables adaptés à vos besoins.
+
+Il y a :
+
+Chambre Standard
+
+Présenter les photos correspondantes.
+
+Informations :
+
+Chambre standard
+Adaptée aux voyageurs seuls
+Couples
+Séjours professionnels
+Possibilité de lits supplémentaires
+Chambre Familiale
+
+Présenter les photos correspondantes.
+
+Informations :
+
+Chambre familiale
+Adaptée aux familles
+Possibilité d'ajouter des lits
+Lits supplémentaires
+
+Afficher clairement :
+
+Lit supplémentaire 1 place : 10 000 Ar
+
+Lit supplémentaire 2 places : 20 000 Ar
+
+12. Tarifs
+
+Créer une section élégante :
+
+Nos tarifs
+
+Important : utiliser exactement les tarifs communiqués par la cliente, notamment ceux présents sur son document/photo tarifaire.
+
+Ne pas inventer de prix.
+
+Créer une présentation sous forme de cartes ou tableau :
+
+CHAMBRE STANDARD
+À partir de ...
+/ nuit
+
+CHAMBRE FAMILIALE
+À partir de ...
+/ nuit
+
+Puis :
+
+Les tarifs peuvent varier selon le type de chambre et les conditions du séjour.
+
+Si la cliente confirme les tarifs définitifs, tu les places ensuite dans le site.
+
+13. Section équipements
+
+Titre :
+
+Tout le confort dont vous avez besoin
+
+Cartes avec icônes :
+
+Wi-Fi gratuit
+
+Connexion Wi-Fi disponible pour les clients.
+
+Climatisation
+
+Chambres équipées de climatisation.
+
+Canal+
+
+Divertissement disponible dans les chambres.
+
+Eau chaude
+
+Eau chaude disponible.
+
+Ménage quotidien
+
+Service de ménage quotidien.
+
+Design :
+
+[ icône ]
+Wi-Fi gratuit
+
+[ icône ]
+Climatisation
+
+[ icône ]
+Canal+
+
+[ icône ]
+Eau chaude
+
+[ icône ]
+Ménage quotidien
+14. Section "Pourquoi City Hôtel ?"
+
+Cette section peut vraiment rendre le site plus professionnel.
+
+3 ou 4 éléments :
+
+📍 Emplacement idéal
+
+Au cœur de Toamasina, à proximité de la mairie et face à la station Total.
+
+🛏️ Confort
+
+Des chambres adaptées aux voyageurs seuls, couples et familles.
+
+👨‍👩‍👧‍👦 Pour tous les séjours
+
+Séjours familiaux, en couple ou professionnels.
+
+📞 Contact facile
+
+WhatsApp, Messenger ou téléphone pour vos demandes.
+
+15. Galerie
+
+Créer une galerie moderne avec les photos envoyées par la cliente.
+
+Exemple :
+
+┌──────────────┬──────────────┐
+│              │              │
+│    PHOTO     │    PHOTO     │
+│              │              │
+├──────────────┼───────┬──────┤
+│              │       │      │
+│    PHOTO     │ PHOTO │PHOTO │
+│              │       │      │
+└──────────────┴───────┴──────┘
+
+Au clic :
+
+Lightbox plein écran
+
+avec possibilité de fermer.
+
+16. Section réservation
+
+Attention : ce n'est pas une réservation en ligne automatisée.
+
+Créer une section :
+
+Vous souhaitez séjourner chez nous ?
+
+Texte :
+
+Contactez-nous directement pour connaître les disponibilités et effectuer votre demande de réservation.
+
+Trois boutons :
+
+WhatsApp
+
+Lien :
+
+https://wa.me/261321107318
+Messenger
+
+Lien vers la page Facebook fournie par la cliente, dès que tu as son lien exact.
+
+Appeler
+
+Boutons :
+
+tel:+261321107318
+
+et
+
+tel:+261383020950
+17. Acompte
+
+La cliente a indiqué :
+
+Acompte demandé pour réserver : Oui — paiement avant confirmation de la réservation.
+
+Donc tu peux afficher :
+
+Réservation
+
+Un acompte est demandé avant confirmation de votre réservation.
+
+Important : ne mets pas de montant ou de moyen de paiement précis tant que la cliente ne te les a pas confirmés.
+
+18. Localisation
+
+Créer une section :
+
+Nous trouver
+
+Afficher :
+
+City Hôtel
+
+25 Boulevard de l'OUA
+Toamasina, Madagascar
+
+Ajouter une carte Google Maps ou un bouton :
+
+Voir l'itinéraire
+
+19. Contact
+
+Section premium :
+
+Contactez-nous
+
+Afficher :
+
+Téléphone
+
++261 32 11 073 18
+
++261 38 30 209 50
+
+WhatsApp
+
++261 32 11 073 18
+
+Email
+
+cityhotel501@gmail.com
+
+Facebook
+
+City Hôtel
+
+20. Horaires
+
+Afficher :
+
+Arrivée
+
+À partir de 12h00
+
+Départ
+
+Avant 12h00
+
+Présenter cela avec deux petites cartes élégantes.
+
+21. Footer
+
+Footer noir ou noir très foncé.
+
+Logo en version claire si disponible.
+
+CITY HÔTEL
+
+Votre confort, notre priorité.
+
+25 Boulevard de l'OUA
+Toamasina, Madagascar
+
+Puis :
+
+Accueil
+L'Hôtel
+Chambres
+Services
+Galerie
+Contact
+
+Contact :
+
++261 32 11 073 18
++261 38 30 209 50
+cityhotel501@gmail.com
+
+Copyright :
+
+© 2026 City Hôtel — Tous droits réservés.
+22. Animations
+
+C'est là que tu peux rendre le site beaucoup plus impressionnant sans ajouter énormément de travail.
+
+Avec Framer Motion :
+
+Au chargement
+apparition progressive du logo ;
+apparition du titre ;
+apparition des boutons.
+Au scroll
+
+Les sections apparaissent progressivement.
+
+Exemple :
+
+opacity: 0 → 1
+translateY: 30px → 0
+Cartes
+
+Au survol :
+
+légère élévation ;
+ombre ;
+bordure dorée subtile.
+Galerie
+
+Zoom léger au survol.
+
+⚠️ Évite les animations excessives. Un hôtel premium doit rester élégant.
+
+23. Responsive Design
+
+Le site doit être conçu mobile-first.
+
+Tester au minimum :
+
+📱 360 px
+📱 390 px
+📱 414 px
+📱 768 px
+💻 1024 px
+🖥️ 1440 px
+
+Sur téléphone :
+
+menu hamburger ;
+cartes en une colonne ;
+boutons larges ;
+texte lisible ;
+galerie adaptée ;
+WhatsApp facilement accessible.
+24. Bouton WhatsApp flottant
+
+Je te recommande fortement d'en mettre un.
+
+En bas à droite :
+
+WhatsApp
+
+Lorsqu'on clique :
+
+https://wa.me/261321107318
+
+Message prérempli possible :
+
+Bonjour City Hôtel, je souhaiterais avoir des informations concernant une réservation.
+
+Ça rend le site beaucoup plus pratique.
+
+25. SEO
+
+Ajouter :
+
+Title
+City Hôtel Toamasina | Hôtel à Toamasina
+Description
+City Hôtel vous accueille au cœur de Toamasina. Découvrez nos chambres, nos équipements et nos services et contactez-nous pour votre réservation.
+Mots-clés
+hôtel Toamasina
+City Hôtel Toamasina
+hôtel à Toamasina
+chambre hôtel Toamasina
+hébergement Toamasina
+26. Performance
+
+Très important pour un site hôtelier avec beaucoup de photos.
+
+Tu dois :
+
+compresser les images ;
+utiliser WebP quand possible ;
+éviter les images énormes ;
+lazy-load des images ;
+ne pas mettre 10 animations lourdes en même temps ;
+optimiser les photos avant de les intégrer.
+
+Par exemple, une photo de téléphone de 5–10 Mo ne doit pas être directement mise sur le site.
+
+27. Sécurité
+
+Comme il n'y a :
+
+aucun compte utilisateur ;
+aucune base de données ;
+aucun paiement ;
+aucun formulaire complexe côté serveur ;
+
+le site reste relativement simple.
+
+Pour le contact, privilégie les liens :
+
+mailto:
+tel:
+https://wa.me/
+28. Architecture technique
+
+Ton App.jsx peut être organisé comme ça :
+
+<Navbar />
+
+<main>
+  <Hero />
+  <About />
+  <Rooms />
+  <Services />
+  <Gallery />
+  <ReservationCTA />
+  <Location />
+  <Contact />
+</main>
+
+<Footer />
+
+<WhatsAppButton />
+
+C'est beaucoup plus facile à maintenir qu'un énorme App.jsx de 1 500 lignes.
+
+29. Données des chambres
+
+Dans :
+
+src/data/rooms.js
+
+Tu peux avoir :
+
+export const rooms = [
+  {
+    name: "Chambre Standard",
+    description: "...",
+    capacity: "...",
+    price: "...",
+    images: [...]
+  },
+  {
+    name: "Chambre Familiale",
+    description: "...",
+    capacity: "...",
+    price: "...",
+    images: [...]
+  }
+];
+
+Comme ça, si la cliente change un tarif, tu modifies seulement les données.
+
+30. Ce que le client pourra faire
+
+Le visiteur pourra :
+
+✅ découvrir l'hôtel
+✅ voir les chambres
+✅ voir les tarifs
+✅ voir les équipements
+✅ regarder les photos
+✅ voir la localisation
+✅ appeler l'hôtel
+✅ envoyer un message WhatsApp
+✅ contacter via Messenger
+✅ envoyer un email
+
+Mais :
+
+❌ pas de compte client
+❌ pas de paiement en ligne
+❌ pas de calendrier de disponibilité
+❌ pas de réservation automatique
+❌ pas de tableau de bord administrateur
+
+CAHIER DES CHARGES — CITY HÔTEL
+1. Informations générales
+
+Nom du projet : City Hôtel — Site vitrine
+Client : City Hôtel
+Localisation : 25 Boulevard de l'OUA, Toamasina, Madagascar
+Type : Site web vitrine hôtelier
+Budget convenu : 200 000 Ar
+Hébergement : Gratuit
+Objectif principal : Présenter professionnellement l'hôtel et permettre aux visiteurs de contacter facilement l'établissement pour obtenir des informations ou effectuer une demande de réservation.
+
+Coordonnées fournies
+📧 Email : cityhotel501@gmail.com
+📱 Téléphone 1 : +261 32 11 073 18
+📱 Téléphone 2 : +261 38 30 209 50
+💬 WhatsApp : +261 32 11 073 18
+📘 Facebook : City Hôtel
+📍 Adresse : 25 Boulevard de l'OUA, Toamasina
+2. Objectifs du site
+
+Le site doit :
+
+présenter City Hôtel de manière professionnelle ;
+mettre en valeur les chambres ;
+afficher les tarifs ;
+présenter les équipements ;
+montrer les photos réelles de l'hôtel ;
+présenter l'emplacement ;
+permettre de contacter rapidement l'hôtel ;
+faciliter les demandes de réservation ;
+être parfaitement adapté aux smartphones ;
+donner une image élégante, moderne et haut de gamme.
+
+Le site ne comportera pas de système de réservation avec disponibilité en temps réel, ni de paiement en ligne.
+
+La réservation se fera par :
+
+WhatsApp → Messenger → Appel téléphonique
+
+3. Identité visuelle
+
+Le logo est principalement doré + noir/blanc. Il faut donc construire tout le site autour d'une identité hôtel premium, élégante et sobre.
+
+Palette recommandée
+Élément	Couleur
+Or principal	#C6A15B
+Or clair	#D8BD7A
+Or foncé	#9B7735
+Noir élégant	#171717
+Blanc	#FFFFFF
+Ivoire	#FAF8F2
+Gris texte	#555555
+Gris clair	#F3F1EB
+Utilisation
+
+Or :
+
+boutons principaux ;
+éléments décoratifs ;
+icônes importantes ;
+lignes et séparateurs ;
+effets au survol.
+
+Noir :
+
+navigation ;
+footer ;
+titres importants ;
+certaines sections premium.
+
+Blanc / ivoire :
+
+arrière-plan principal ;
+cartes ;
+espaces autour des photos.
+Style général
+
+Luxury / Elegant / Modern / Minimal / Hotel Premium
+
+Éviter un design trop chargé.
+
+4. Typographie
+
+Pour avoir un rendu hôtelier haut de gamme :
+
+Titres
+
+Playfair Display
+
+Exemple :
+
+CITY HÔTEL
+Votre confort, notre priorité.
+
+Texte
+
+Montserrat ou Inter
+
+Exemple :
+
+Découvrez nos chambres confortables au cœur de Toamasina.
+
+Cette combinaison donne un aspect beaucoup plus professionnel qu'une police classique.
+
+5. Technologies
+
+Je te recommande :
+
+Frontend
+React.js
+Vite
+Tailwind CSS
+JavaScript
+Lucide React pour les icônes
+Framer Motion pour les animations
+Hébergement
+Netlify ou Vercel
+Hébergement gratuit
+Pas de serveur nécessaire
+Pas besoin
+
+❌ PHP
+❌ MySQL
+❌ Node.js backend
+❌ API
+❌ système d'administration
+❌ système de réservation complexe
+
+Pour ce projet, un frontend React suffit.
+
+6. Installation du projet
+
+Dans CMD :
+
+npm create vite@latest city-hotel -- --template react
+
+Puis :
+
+cd city-hotel
+npm install
+
+Installer Tailwind :
+
+npm install tailwindcss @tailwindcss/vite
+
+Installer les icônes :
+
+npm install lucide-react
+
+Installer les animations :
+
+npm install framer-motion
+
+Puis lancer :
+
+npm run dev
+
+Le projet sera normalement disponible sur :
+
+http://localhost:5173
+7. Structure du projet
+
+Je te conseille cette structure :
+
+city-hotel/
+│
+├── public/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── hotel.jpg
+│   │   ├── chambres/
+│   │   ├── galerie/
+│   │   └── services/
+│   │
+│   └── favicon.png
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Rooms.jsx
+│   │   ├── RoomCard.jsx
+│   │   ├── Services.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Location.jsx
+│   │   ├── Contact.jsx
+│   │   ├── ReservationCTA.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── data/
+│   │   ├── rooms.js
+│   │   └── services.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── vite.config.js
+8. Navigation
+
+La barre de navigation doit être élégante et simple.
+
+Logo
+
+À gauche :
+
+CITY HÔTEL
+
+avec le logo fourni.
+
+Menu
+Accueil
+L'Hôtel
+Chambres
+Services
+Galerie
+Localisation
+Contact
+
+À droite :
+
+Réserver / Nous contacter
+
+Bouton doré.
+
+Mobile
+
+Sur smartphone :
+
+☰ Menu hamburger
+
+Le menu doit devenir un menu mobile propre.
+
+9. Page d'accueil — HERO
+
+C'est la partie la plus importante du site.
+
+Utiliser une très belle photo réelle de l'hôtel ou d'une chambre comme arrière-plan.
+
+Exemple de contenu
+
+CITY HÔTEL
+
+Votre confort, notre priorité.
+
+Texte :
+
+Situé au cœur de Toamasina, City Hôtel vous accueille dans un cadre confortable et pratique, adapté aux séjours en famille, en couple ou professionnels.
+
+Boutons :
+
+RÉSERVER / CONTACTER
+
+et
+
+DÉCOUVRIR NOS CHAMBRES
+
+Design
+
+Image plein écran.
+
+Overlay noir légèrement transparent.
+
+Titre blanc.
+
+Petits détails dorés.
+
+Animation d'apparition au chargement.
+
+10. Section présentation
+
+Titre :
+
+Bienvenue à City Hôtel
+
+Texte fourni par la cliente :
+
+City Hôtel vous accueille en plein cœur de Toamasina, dans un emplacement idéal, face à la station Total et à proximité de la mairie.
+
+Un établissement pensé pour vous offrir confort, tranquillité et praticité, que ce soit pour un séjour en famille, en couple ou professionnel.
+
+À côté :
+
+Une belle photo de l'hôtel.
+
+Petit élément visuel
+✦
+Votre confort,
+Notre priorité.
+11. Section Chambres
+
+Titre :
+
+Nos chambres
+
+Sous-titre :
+
+Des espaces confortables adaptés à vos besoins.
+
+Il y a :
+
+Chambre Standard
+
+Présenter les photos correspondantes.
+
+Informations :
+
+Chambre standard
+Adaptée aux voyageurs seuls
+Couples
+Séjours professionnels
+Possibilité de lits supplémentaires
+Chambre Familiale
+
+Présenter les photos correspondantes.
+
+Informations :
+
+Chambre familiale
+Adaptée aux familles
+Possibilité d'ajouter des lits
+Lits supplémentaires
+
+Afficher clairement :
+
+Lit supplémentaire 1 place : 10 000 Ar
+
+Lit supplémentaire 2 places : 20 000 Ar
+
+12. Tarifs
+
+Créer une section élégante :
+
+Nos tarifs
+
+Important : utiliser exactement les tarifs communiqués par la cliente, notamment ceux présents sur son document/photo tarifaire.
+
+Ne pas inventer de prix.
+
+Créer une présentation sous forme de cartes ou tableau :
+
+CHAMBRE STANDARD
+À partir de ...
+/ nuit
+
+CHAMBRE FAMILIALE
+À partir de ...
+/ nuit
+
+Puis :
+
+Les tarifs peuvent varier selon le type de chambre et les conditions du séjour.
+
+Si la cliente confirme les tarifs définitifs, tu les places ensuite dans le site.
+
+13. Section équipements
+
+Titre :
+
+Tout le confort dont vous avez besoin
+
+Cartes avec icônes :
+
+Wi-Fi gratuit
+
+Connexion Wi-Fi disponible pour les clients.
+
+Climatisation
+
+Chambres équipées de climatisation.
+
+Canal+
+
+Divertissement disponible dans les chambres.
+
+Eau chaude
+
+Eau chaude disponible.
+
+Ménage quotidien
+
+Service de ménage quotidien.
+
+Design :
+
+[ icône ]
+Wi-Fi gratuit
+
+[ icône ]
+Climatisation
+
+[ icône ]
+Canal+
+
+[ icône ]
+Eau chaude
+
+[ icône ]
+Ménage quotidien
+14. Section "Pourquoi City Hôtel ?"
+
+Cette section peut vraiment rendre le site plus professionnel.
+
+3 ou 4 éléments :
+
+📍 Emplacement idéal
+
+Au cœur de Toamasina, à proximité de la mairie et face à la station Total.
+
+🛏️ Confort
+
+Des chambres adaptées aux voyageurs seuls, couples et familles.
+
+👨‍👩‍👧‍👦 Pour tous les séjours
+
+Séjours familiaux, en couple ou professionnels.
+
+📞 Contact facile
+
+WhatsApp, Messenger ou téléphone pour vos demandes.
+
+15. Galerie
+
+Créer une galerie moderne avec les photos envoyées par la cliente.
+
+Exemple :
+
+┌──────────────┬──────────────┐
+│              │              │
+│    PHOTO     │    PHOTO     │
+│              │              │
+├──────────────┼───────┬──────┤
+│              │       │      │
+│    PHOTO     │ PHOTO │PHOTO │
+│              │       │      │
+└──────────────┴───────┴──────┘
+
+Au clic :
+
+Lightbox plein écran
+
+avec possibilité de fermer.
+
+16. Section réservation
+
+Attention : ce n'est pas une réservation en ligne automatisée.
+
+Créer une section :
+
+Vous souhaitez séjourner chez nous ?
+
+Texte :
+
+Contactez-nous directement pour connaître les disponibilités et effectuer votre demande de réservation.
+
+Trois boutons :
+
+WhatsApp
+
+Lien :
+
+https://wa.me/261321107318
+Messenger
+
+Lien vers la page Facebook fournie par la cliente, dès que tu as son lien exact.
+
+Appeler
+
+Boutons :
+
+tel:+261321107318
+
+et
+
+tel:+261383020950
+17. Acompte
+
+La cliente a indiqué :
+
+Acompte demandé pour réserver : Oui — paiement avant confirmation de la réservation.
+
+Donc tu peux afficher :
+
+Réservation
+
+Un acompte est demandé avant confirmation de votre réservation.
+
+Important : ne mets pas de montant ou de moyen de paiement précis tant que la cliente ne te les a pas confirmés.
+
+18. Localisation
+
+Créer une section :
+
+Nous trouver
+
+Afficher :
+
+City Hôtel
+
+25 Boulevard de l'OUA
+Toamasina, Madagascar
+
+Ajouter une carte Google Maps ou un bouton :
+
+Voir l'itinéraire
+
+19. Contact
+
+Section premium :
+
+Contactez-nous
+
+Afficher :
+
+Téléphone
+
++261 32 11 073 18
+
++261 38 30 209 50
+
+WhatsApp
+
++261 32 11 073 18
+
+Email
+
+cityhotel501@gmail.com
+
+Facebook
+
+City Hôtel
+
+20. Horaires
+
+Afficher :
+
+Arrivée
+
+À partir de 12h00
+
+Départ
+
+Avant 12h00
+
+Présenter cela avec deux petites cartes élégantes.
+
+21. Footer
+
+Footer noir ou noir très foncé.
+
+Logo en version claire si disponible.
+
+CITY HÔTEL
+
+Votre confort, notre priorité.
+
+25 Boulevard de l'OUA
+Toamasina, Madagascar
+
+Puis :
+
+Accueil
+L'Hôtel
+Chambres
+Services
+Galerie
+Contact
+
+Contact :
+
++261 32 11 073 18
++261 38 30 209 50
+cityhotel501@gmail.com
+
+Copyright :
+
+© 2026 City Hôtel — Tous droits réservés.
+22. Animations
+
+C'est là que tu peux rendre le site beaucoup plus impressionnant sans ajouter énormément de travail.
+
+Avec Framer Motion :
+
+Au chargement
+apparition progressive du logo ;
+apparition du titre ;
+apparition des boutons.
+Au scroll
+
+Les sections apparaissent progressivement.
+
+Exemple :
+
+opacity: 0 → 1
+translateY: 30px → 0
+Cartes
+
+Au survol :
+
+légère élévation ;
+ombre ;
+bordure dorée subtile.
+Galerie
+
+Zoom léger au survol.
+
+⚠️ Évite les animations excessives. Un hôtel premium doit rester élégant.
+
+23. Responsive Design
+
+Le site doit être conçu mobile-first.
+
+Tester au minimum :
+
+📱 360 px
+📱 390 px
+📱 414 px
+📱 768 px
+💻 1024 px
+🖥️ 1440 px
+
+Sur téléphone :
+
+menu hamburger ;
+cartes en une colonne ;
+boutons larges ;
+texte lisible ;
+galerie adaptée ;
+WhatsApp facilement accessible.
+24. Bouton WhatsApp flottant
+
+Je te recommande fortement d'en mettre un.
+
+En bas à droite :
+
+WhatsApp
+
+Lorsqu'on clique :
+
+https://wa.me/261321107318
+
+Message prérempli possible :
+
+Bonjour City Hôtel, je souhaiterais avoir des informations concernant une réservation.
+
+Ça rend le site beaucoup plus pratique.
+
+25. SEO
+
+Ajouter :
+
+Title
+City Hôtel Toamasina | Hôtel à Toamasina
+Description
+City Hôtel vous accueille au cœur de Toamasina. Découvrez nos chambres, nos équipements et nos services et contactez-nous pour votre réservation.
+Mots-clés
+hôtel Toamasina
+City Hôtel Toamasina
+hôtel à Toamasina
+chambre hôtel Toamasina
+hébergement Toamasina
+26. Performance
+
+Très important pour un site hôtelier avec beaucoup de photos.
+
+Tu dois :
+
+compresser les images ;
+utiliser WebP quand possible ;
+éviter les images énormes ;
+lazy-load des images ;
+ne pas mettre 10 animations lourdes en même temps ;
+optimiser les photos avant de les intégrer.
+
+Par exemple, une photo de téléphone de 5–10 Mo ne doit pas être directement mise sur le site.
+
+27. Sécurité
+
+Comme il n'y a :
+
+aucun compte utilisateur ;
+aucune base de données ;
+aucun paiement ;
+aucun formulaire complexe côté serveur ;
+
+le site reste relativement simple.
+
+Pour le contact, privilégie les liens :
+
+mailto:
+tel:
+https://wa.me/
+28. Architecture technique
+
+Ton App.jsx peut être organisé comme ça :
+
+<Navbar />
+
+<main>
+  <Hero />
+  <About />
+  <Rooms />
+  <Services />
+  <Gallery />
+  <ReservationCTA />
+  <Location />
+  <Contact />
+</main>
+
+<Footer />
+
+<WhatsAppButton />
+
+C'est beaucoup plus facile à maintenir qu'un énorme App.jsx de 1 500 lignes.
+
+29. Données des chambres
+
+Dans :
+
+src/data/rooms.js
+
+Tu peux avoir :
+
+export const rooms = [
+  {
+    name: "Chambre Standard",
+    description: "...",
+    capacity: "...",
+    price: "...",
+    images: [...]
+  },
+  {
+    name: "Chambre Familiale",
+    description: "...",
+    capacity: "...",
+    price: "...",
+    images: [...]
+  }
+];
+
+Comme ça, si la cliente change un tarif, tu modifies seulement les données.
+
+30. Ce que le client pourra faire
+
+Le visiteur pourra :
+
+✅ découvrir l'hôtel
+✅ voir les chambres
+✅ voir les tarifs
+✅ voir les équipements
+✅ regarder les photos
+✅ voir la localisation
+✅ appeler l'hôtel
+✅ envoyer un message WhatsApp
+✅ contacter via Messenger
+✅ envoyer un email
+
+Mais :
+
+❌ pas de compte client
+❌ pas de paiement en ligne
+❌ pas de calendrier de disponibilité
+❌ pas de réservation automatique
+❌ pas de tableau de bord administrateur
+CAHIER DES CHARGES — CITY HÔTEL
+1. Informations générales
+
+Nom du projet : City Hôtel — Site vitrine
+Client : City Hôtel
+Localisation : 25 Boulevard de l'OUA, Toamasina, Madagascar
+Type : Site web vitrine hôtelier
+Budget convenu : 200 000 Ar
+Hébergement : Gratuit
+Objectif principal : Présenter professionnellement l'hôtel et permettre aux visiteurs de contacter facilement l'établissement pour obtenir des informations ou effectuer une demande de réservation.
+
+Coordonnées fournies
+📧 Email : cityhotel501@gmail.com
+📱 Téléphone 1 : +261 32 11 073 18
+📱 Téléphone 2 : +261 38 30 209 50
+💬 WhatsApp : +261 32 11 073 18
+📘 Facebook : City Hôtel
+📍 Adresse : 25 Boulevard de l'OUA, Toamasina
+2. Objectifs du site
+
+Le site doit :
+
+présenter City Hôtel de manière professionnelle ;
+mettre en valeur les chambres ;
+afficher les tarifs ;
+présenter les équipements ;
+montrer les photos réelles de l'hôtel ;
+présenter l'emplacement ;
+permettre de contacter rapidement l'hôtel ;
+faciliter les demandes de réservation ;
+être parfaitement adapté aux smartphones ;
+donner une image élégante, moderne et haut de gamme.
+
+Le site ne comportera pas de système de réservation avec disponibilité en temps réel, ni de paiement en ligne.
+
+La réservation se fera par :
+
+WhatsApp → Messenger → Appel téléphonique
+
+3. Identité visuelle
+
+Le logo est principalement doré + noir/blanc. Il faut donc construire tout le site autour d'une identité hôtel premium, élégante et sobre.
+
+Palette recommandée
+Élément	Couleur
+Or principal	#C6A15B
+Or clair	#D8BD7A
+Or foncé	#9B7735
+Noir élégant	#171717
+Blanc	#FFFFFF
+Ivoire	#FAF8F2
+Gris texte	#555555
+Gris clair	#F3F1EB
+Utilisation
+
+Or :
+
+boutons principaux ;
+éléments décoratifs ;
+icônes importantes ;
+lignes et séparateurs ;
+effets au survol.
+
+Noir :
+
+navigation ;
+footer ;
+titres importants ;
+certaines sections premium.
+
+Blanc / ivoire :
+
+arrière-plan principal ;
+cartes ;
+espaces autour des photos.
+Style général
+
+Luxury / Elegant / Modern / Minimal / Hotel Premium
+
+Éviter un design trop chargé.
+
+4. Typographie
+
+Pour avoir un rendu hôtelier haut de gamme :
+
+Titres
+
+Playfair Display
+
+Exemple :
+
+CITY HÔTEL
+Votre confort, notre priorité.
+
+Texte
+
+Montserrat ou Inter
+
+Exemple :
+
+Découvrez nos chambres confortables au cœur de Toamasina.
+
+Cette combinaison donne un aspect beaucoup plus professionnel qu'une police classique.
+
+5. Technologies
+
+Je te recommande :
+
+Frontend
+React.js
+Vite
+Tailwind CSS
+JavaScript
+Lucide React pour les icônes
+Framer Motion pour les animations
+Hébergement
+Netlify ou Vercel
+Hébergement gratuit
+Pas de serveur nécessaire
+Pas besoin
+
+❌ PHP
+❌ MySQL
+❌ Node.js backend
+❌ API
+❌ système d'administration
+❌ système de réservation complexe
+
+Pour ce projet, un frontend React suffit.
+
+6. Installation du projet
+
+Dans CMD :
+
+npm create vite@latest city-hotel -- --template react
+
+Puis :
+
+cd city-hotel
+npm install
+
+Installer Tailwind :
+
+npm install tailwindcss @tailwindcss/vite
+
+Installer les icônes :
+
+npm install lucide-react
+
+Installer les animations :
+
+npm install framer-motion
+
+Puis lancer :
+
+npm run dev
+
+Le projet sera normalement disponible sur :
+
+http://localhost:5173
+7. Structure du projet
+
+Je te conseille cette structure :
+
+city-hotel/
+│
+├── public/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── hotel.jpg
+│   │   ├── chambres/
+│   │   ├── galerie/
+│   │   └── services/
+│   │
+│   └── favicon.png
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Rooms.jsx
+│   │   ├── RoomCard.jsx
+│   │   ├── Services.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Location.jsx
+│   │   ├── Contact.jsx
+│   │   ├── ReservationCTA.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── data/
+│   │   ├── rooms.js
+│   │   └── services.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── vite.config.js
+8. Navigation
+
+La barre de navigation doit être élégante et simple.
+
+Logo
+
+À gauche :
+
+CITY HÔTEL
+
+avec le logo fourni.
+
+Menu
+Accueil
+L'Hôtel
+Chambres
+Services
+Galerie
+Localisation
+Contact
+
+À droite :
+
+Réserver / Nous contacter
+
+Bouton doré.
+
+Mobile
+
+Sur smartphone :
+
+☰ Menu hamburger
+
+Le menu doit devenir un menu mobile propre.
+
+9. Page d'accueil — HERO
+
+C'est la partie la plus importante du site.
+
+Utiliser une très belle photo réelle de l'hôtel ou d'une chambre comme arrière-plan.
+
+Exemple de contenu
+
+CITY HÔTEL
+
+Votre confort, notre priorité.
+
+Texte :
+
+Situé au cœur de Toamasina, City Hôtel vous accueille dans un cadre confortable et pratique, adapté aux séjours en famille, en couple ou professionnels.
+
+Boutons :
+
+RÉSERVER / CONTACTER
+
+et
+
+DÉCOUVRIR NOS CHAMBRES
+
+Design
+
+Image plein écran.
+
+Overlay noir légèrement transparent.
+
+Titre blanc.
+
+Petits détails dorés.
+
+Animation d'apparition au chargement.
+
+10. Section présentation
+
+Titre :
+
+Bienvenue à City Hôtel
+
+Texte fourni par la cliente :
+
+City Hôtel vous accueille en plein cœur de Toamasina, dans un emplacement idéal, face à la station Total et à proximité de la mairie.
+
+Un établissement pensé pour vous offrir confort, tranquillité et praticité, que ce soit pour un séjour en famille, en couple ou professionnel.
+
+À côté :
+
+Une belle photo de l'hôtel.
+
+Petit élément visuel
+✦
+Votre confort,
+Notre priorité.
+11. Section Chambres
+
+Titre :
+
+Nos chambres
+
+Sous-titre :
+
+Des espaces confortables adaptés à vos besoins.
+
+Il y a :
+
+Chambre Standard
+
+Présenter les photos correspondantes.
+
+Informations :
+
+Chambre standard
+Adaptée aux voyageurs seuls
+Couples
+Séjours professionnels
+Possibilité de lits supplémentaires
+Chambre Familiale
+
+Présenter les photos correspondantes.
+
+Informations :
+
+Chambre familiale
+Adaptée aux familles
+Possibilité d'ajouter des lits
+Lits supplémentaires
+
+Afficher clairement :
+
+Lit supplémentaire 1 place : 10 000 Ar
+
+Lit supplémentaire 2 places : 20 000 Ar
+
+12. Tarifs
+
+Créer une section élégante :
+
+Nos tarifs
+
+Important : utiliser exactement les tarifs communiqués par la cliente, notamment ceux présents sur son document/photo tarifaire.
+
+Ne pas inventer de prix.
+
+Créer une présentation sous forme de cartes ou tableau :
+
+CHAMBRE STANDARD
+À partir de ...
+/ nuit
+
+CHAMBRE FAMILIALE
+À partir de ...
+/ nuit
+
+Puis :
+
+Les tarifs peuvent varier selon le type de chambre et les conditions du séjour.
+
+Si la cliente confirme les tarifs définitifs, tu les places ensuite dans le site.
+
+13. Section équipements
+
+Titre :
+
+Tout le confort dont vous avez besoin
+
+Cartes avec icônes :
+
+Wi-Fi gratuit
+
+Connexion Wi-Fi disponible pour les clients.
+
+Climatisation
+
+Chambres équipées de climatisation.
+
+Canal+
+
+Divertissement disponible dans les chambres.
+
+Eau chaude
+
+Eau chaude disponible.
+
+Ménage quotidien
+
+Service de ménage quotidien.
+
+Design :
+
+[ icône ]
+Wi-Fi gratuit
+
+[ icône ]
+Climatisation
+
+[ icône ]
+Canal+
+
+[ icône ]
+Eau chaude
+
+[ icône ]
+Ménage quotidien
+14. Section "Pourquoi City Hôtel ?"
+
+Cette section peut vraiment rendre le site plus professionnel.
+
+3 ou 4 éléments :
+
+📍 Emplacement idéal
+
+Au cœur de Toamasina, à proximité de la mairie et face à la station Total.
+
+🛏️ Confort
+
+Des chambres adaptées aux voyageurs seuls, couples et familles.
+
+👨‍👩‍👧‍👦 Pour tous les séjours
+
+Séjours familiaux, en couple ou professionnels.
+
+📞 Contact facile
+
+WhatsApp, Messenger ou téléphone pour vos demandes.
+
+15. Galerie
+
+Créer une galerie moderne avec les photos envoyées par la cliente.
+
+Exemple :
+
+┌──────────────┬──────────────┐
+│              │              │
+│    PHOTO     │    PHOTO     │
+│              │              │
+├──────────────┼───────┬──────┤
+│              │       │      │
+│    PHOTO     │ PHOTO │PHOTO │
+│              │       │      │
+└──────────────┴───────┴──────┘
+
+Au clic :
+
+Lightbox plein écran
+
+avec possibilité de fermer.
+
+16. Section réservation
+
+Attention : ce n'est pas une réservation en ligne automatisée.
+
+Créer une section :
+
+Vous souhaitez séjourner chez nous ?
+
+Texte :
+
+Contactez-nous directement pour connaître les disponibilités et effectuer votre demande de réservation.
+
+Trois boutons :
+
+WhatsApp
+
+Lien :
+
+https://wa.me/261321107318
+Messenger
+
+Lien vers la page Facebook fournie par la cliente, dès que tu as son lien exact.
+
+Appeler
+
+Boutons :
+
+tel:+261321107318
+
+et
+
+tel:+261383020950
+17. Acompte
+
+La cliente a indiqué :
+
+Acompte demandé pour réserver : Oui — paiement avant confirmation de la réservation.
+
+Donc tu peux afficher :
+
+Réservation
+
+Un acompte est demandé avant confirmation de votre réservation.
+
+Important : ne mets pas de montant ou de moyen de paiement précis tant que la cliente ne te les a pas confirmés.
+
+18. Localisation
+
+Créer une section :
+
+Nous trouver
+
+Afficher :
+
+City Hôtel
+
+25 Boulevard de l'OUA
+Toamasina, Madagascar
+
+Ajouter une carte Google Maps ou un bouton :
+
+Voir l'itinéraire
+
+19. Contact
+
+Section premium :
+
+Contactez-nous
+
+Afficher :
+
+Téléphone
+
++261 32 11 073 18
+
++261 38 30 209 50
+
+WhatsApp
+
++261 32 11 073 18
+
+Email
+
+cityhotel501@gmail.com
+
+Facebook
+
+City Hôtel
+
+20. Horaires
+
+Afficher :
+
+Arrivée
+
+À partir de 12h00
+
+Départ
+
+Avant 12h00
+
+Présenter cela avec deux petites cartes élégantes.
+
+21. Footer
+
+Footer noir ou noir très foncé.
+
+Logo en version claire si disponible.
+
+CITY HÔTEL
+
+Votre confort, notre priorité.
+
+25 Boulevard de l'OUA
+Toamasina, Madagascar
+
+Puis :
+
+Accueil
+L'Hôtel
+Chambres
+Services
+Galerie
+Contact
+
+Contact :
+
++261 32 11 073 18
++261 38 30 209 50
+cityhotel501@gmail.com
+
+Copyright :
+
+© 2026 City Hôtel — Tous droits réservés.
+22. Animations
+
+C'est là que tu peux rendre le site beaucoup plus impressionnant sans ajouter énormément de travail.
+
+Avec Framer Motion :
+
+Au chargement
+apparition progressive du logo ;
+apparition du titre ;
+apparition des boutons.
+Au scroll
+
+Les sections apparaissent progressivement.
+
+Exemple :
+
+opacity: 0 → 1
+translateY: 30px → 0
+Cartes
+
+Au survol :
+
+légère élévation ;
+ombre ;
+bordure dorée subtile.
+Galerie
+
+Zoom léger au survol.
+
+⚠️ Évite les animations excessives. Un hôtel premium doit rester élégant.
+
+23. Responsive Design
+
+Le site doit être conçu mobile-first.
+
+Tester au minimum :
+
+📱 360 px
+📱 390 px
+📱 414 px
+📱 768 px
+💻 1024 px
+🖥️ 1440 px
+
+Sur téléphone :
+
+menu hamburger ;
+cartes en une colonne ;
+boutons larges ;
+texte lisible ;
+galerie adaptée ;
+WhatsApp facilement accessible.
+24. Bouton WhatsApp flottant
+
+Je te recommande fortement d'en mettre un.
+
+En bas à droite :
+
+WhatsApp
+
+Lorsqu'on clique :
+
+https://wa.me/261321107318
+
+Message prérempli possible :
+
+Bonjour City Hôtel, je souhaiterais avoir des informations concernant une réservation.
+
+Ça rend le site beaucoup plus pratique.
+
+25. SEO
+
+Ajouter :
+
+Title
+City Hôtel Toamasina | Hôtel à Toamasina
+Description
+City Hôtel vous accueille au cœur de Toamasina. Découvrez nos chambres, nos équipements et nos services et contactez-nous pour votre réservation.
+Mots-clés
+hôtel Toamasina
+City Hôtel Toamasina
+hôtel à Toamasina
+chambre hôtel Toamasina
+hébergement Toamasina
+26. Performance
+
+Très important pour un site hôtelier avec beaucoup de photos.
+
+Tu dois :
+
+compresser les images ;
+utiliser WebP quand possible ;
+éviter les images énormes ;
+lazy-load des images ;
+ne pas mettre 10 animations lourdes en même temps ;
+optimiser les photos avant de les intégrer.
+
+Par exemple, une photo de téléphone de 5–10 Mo ne doit pas être directement mise sur le site.
+
+27. Sécurité
+
+Comme il n'y a :
+
+aucun compte utilisateur ;
+aucune base de données ;
+aucun paiement ;
+aucun formulaire complexe côté serveur ;
+
+le site reste relativement simple.
+
+Pour le contact, privilégie les liens :
+
+mailto:
+tel:
+https://wa.me/
+28. Architecture technique
+
+Ton App.jsx peut être organisé comme ça :
+
+<Navbar />
+
+<main>
+  <Hero />
+  <About />
+  <Rooms />
+  <Services />
+  <Gallery />
+  <ReservationCTA />
+  <Location />
+  <Contact />
+</main>
+
+<Footer />
+
+<WhatsAppButton />
+
+C'est beaucoup plus facile à maintenir qu'un énorme App.jsx de 1 500 lignes.
+
+29. Données des chambres
+
+Dans :
+
+src/data/rooms.js
+
+Tu peux avoir :
+
+export const rooms = [
+  {
+    name: "Chambre Standard",
+    description: "...",
+    capacity: "...",
+    price: "...",
+    images: [...]
+  },
+  {
+    name: "Chambre Familiale",
+    description: "...",
+    capacity: "...",
+    price: "...",
+    images: [...]
+  }
+];
+
+Comme ça, si la cliente change un tarif, tu modifies seulement les données.
+
+30. Ce que le client pourra faire
+
+Le visiteur pourra :
+
+✅ découvrir l'hôtel
+✅ voir les chambres
+✅ voir les tarifs
+✅ voir les équipements
+✅ regarder les photos
+✅ voir la localisation
+✅ appeler l'hôtel
+✅ envoyer un message WhatsApp
+✅ contacter via Messenger
+✅ envoyer un email
+
+Mais :
+
+❌ pas de compte client
+❌ pas de paiement en ligne
+❌ pas de calendrier de disponibilité
+❌ pas de réservation automatique
+❌ pas de tableau de bord administrateur
+
+Ordre de réalisation que je te conseille
+
+Ne commence surtout pas directement par coder toutes les sections.
+
+Étape 1
+
+Préparer toutes les photos.
+
+Étape 2
+
+Créer l'identité visuelle :
+
+Or + blanc + noir + ivoire
+
+Étape 3
+
+Créer la Navbar.
+
+Étape 4
+
+Créer le Hero.
+
+Étape 5
+
+Créer les chambres.
+
+Étape 6
+
+Créer les services.
+
+Étape 7
+
+Créer la galerie.
+
+Étape 8
+
+Créer contact + WhatsApp.
+
+Étape 9
+
+Créer footer.
+
+Étape 10
+
+Animations.
+
+Étape 11
+
+Responsive.
+
+Étape 12
+
+Optimisation des images.
+
+Étape 13
+
+Tester téléphone + ordinateur.
+
+Direction artistique finale
+
+Pour City Hôtel, je partirais sur quelque chose comme :
+
+Fond : ivoire/blanc
+Titres : noir élégant
+Détails : or
+Boutons : or avec texte noir
+Hover : or légèrement plus foncé
+Sections premium : noir + texte blanc + accents dorés
+Photos : grandes, avec coins légèrement arrondis
+Typographie : Playfair Display + Montserrat
+Style : hôtel moderne, élégant, luxueux mais pas excessivement chargé.
+
+
+🏨 CITY HÔTEL – INFORMATIONS
+
+📧 Adresse mail & Téléphone
+📧 cityhotel501@gmail.com
+📞 +261 32 11 073 18
+📞 +261 38 30 209 50
+
+💰 Prix par nuit
+À partir de 55 000 Ar / nuit
+Jusqu’à 150 000 Ar / nuit, selon la chambre.
+
+🏨 Nom et type de chambre
+* Chambre Double
+* Chambre Familiale
+
+👥 Capacité & type de lit
+Nos chambres sont adaptées pour :
+* 👤 Voyageurs seuls
+* 💑 Couples
+* 👨‍👩‍👧‍👦 Familles
+* 💼 Séjours professionnels
+
+🛏️ Lits supplémentaires disponibles sur demande pour les chambres familiales, afin d’accueillir confortablement les familles nombreuses.
+
+✨ Équipements
+✅ Wi-Fi gratuit
+✅ Climatisation
+✅ Canal+
+✅ Eau chaude
+✅ Ménage quotidien
+
+📍 Brève présentation de l’établissement
+City Hôtel vous accueille en plein cœur de Toamasina, dans un emplacement idéal, face à la station Total et à proximité de la mairie.
+
+Un établissement pensé pour vous offrir confort, tranquillité et praticité, que ce soit pour un séjour en famille, en couple ou professionnel.
+
+✨ Votre confort, Notre priorité.
+
+💳 Acompte demandé pour réserver
+Oui – paiement avant confirmation de la réservation.
+
+[18:17, 26/09/2026] City Hotel: Adresse exact: 25 boulevard de l’OUA Toamasina
+Whatsapp : 00261321107318
+Facebook: https://web.facebook.com/profile.php?id=61590650725522 
+Il n’y a qu’une chambré familiale et les autres sont standards mais on peut ajouter des lits supplémentaires 2places (20.000 ar) et 1place (10.000ar)
+[18:18, 26/09/2026] City Hotel: Heure  d’arrivée client : 12h
+Départ: avant 12h
+Contact souhaité: WhatsApp ou Messenger ou appel direct sur les 2 numéros de l’hôtel (YAS ou Orange)
