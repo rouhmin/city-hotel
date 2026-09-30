@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X, Phone, Sparkles, Send } from 'lucide-react';
 import { hotelInfo, getWhatsAppLink } from '../data/hotelInfo';
 import { rooms } from '../data/rooms';
@@ -19,6 +19,16 @@ export default function ReservationModal({ isOpen, onClose, initialRoom = null }
     setPrevInitialRoom(initialRoom);
     setSelectedRoom(initialRoom ? initialRoom.name : rooms[0]?.name || '');
   }
+
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+    return () => document.body.classList.remove('modal-open');
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -42,29 +52,29 @@ export default function ReservationModal({ isOpen, onClose, initialRoom = null }
 
   return (
     <div 
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-start sm:items-center justify-center overflow-y-auto"
       onClick={onClose}
     >
       <div 
-        className="bg-[#FAF8F2] rounded-3xl p-6 sm:p-8 max-w-2xl w-full my-8 relative border-2 border-[#C6A15B]/40 shadow-2xl"
+        className="bg-[#FAF8F2] rounded-none sm:rounded-3xl p-5 sm:p-8 w-full sm:max-w-2xl min-h-screen sm:min-h-0 sm:my-8 sm:max-h-[90vh] overflow-y-auto relative border-0 sm:border-2 border-[#C6A15B]/40 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-10 h-10 rounded-full bg-white border border-[#C6A15B]/30 hover:bg-gray-100 flex items-center justify-center text-[#171717] transition-colors cursor-pointer"
+          className="sticky top-0 float-right z-10 w-10 h-10 rounded-full bg-white border border-[#C6A15B]/30 hover:bg-gray-100 flex items-center justify-center text-[#171717] transition-colors cursor-pointer shadow-md"
           aria-label="Fermer la fenêtre"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Modal Header */}
-        <div className="mb-6 pr-10">
+        <div className="mb-6 clear-both">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C6A15B]/15 text-[#9B7735] text-xs font-bold uppercase tracking-wider mb-2">
             <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />
             <span>Demande Directe</span>
           </div>
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717]">
+          <h3 className="font-serif text-xl sm:text-3xl font-bold text-[#171717]">
             Réservation à City Hôtel
           </h3>
           <p className="text-xs text-[#666666] mt-1">

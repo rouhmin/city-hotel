@@ -34,7 +34,7 @@ export default function ReservationCTA({ onOpenBookingModal }) {
   };
 
   return (
-    <section id="reservation" className="py-20 lg:py-28 bg-[#171717] text-white relative overflow-hidden">
+    <section id="reservation" className="py-14 sm:py-20 lg:py-28 bg-[#171717] text-white relative overflow-hidden">
       {/* Background Gold Gradient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C6A15B]/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -46,7 +46,7 @@ export default function ReservationCTA({ onOpenBookingModal }) {
             <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />
             <span>Demande Directe</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Vous Souhaitez Séjourner Chez Nous ?
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#D8BD7A] via-[#C6A15B] to-[#9B7735] mx-auto rounded-full mb-6" />
@@ -144,7 +144,7 @@ export default function ReservationCTA({ onOpenBookingModal }) {
         </div>
 
         {/* Interactive Custom Quote / Fast WhatsApp Generator */}
-        <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-[#C6A15B]/30 shadow-2xl mb-16">
+        <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-[#C6A15B]/30 shadow-2xl mb-16">
           <div className="text-center mb-8">
             <h3 className="font-serif text-2xl font-bold text-[#D8BD7A] mb-1">
               Personnaliser votre message de réservation
@@ -154,7 +154,7 @@ export default function ReservationCTA({ onOpenBookingModal }) {
             </p>
           </div>
 
-          <form onSubmit={handleCustomWhatsApp} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <form onSubmit={handleCustomWhatsApp} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             
             <div>
               <label className="block text-xs font-semibold text-[#D8BD7A] mb-1.5">
