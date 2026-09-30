@@ -16,9 +16,9 @@ export const services = [
   {
     id: "canal",
     iconName: "Tv",
-    title: "TV avec Bouquet Canal+",
-    description: "Écran plat avec accès aux meilleures chaînes Canal+ : cinéma, séries, actualités internationales et grands événements sportifs en direct.",
-    highlight: "Divertissement premium"
+    title: "TV avec Bouquet Canal+ & Netflix",
+    description: "Écran plat avec accès aux chaînes Canal+ et à Netflix : séries, films, streaming, documentaires et grands rendez-vous sportifs.",
+    highlight: "Canal+ & Netflix"
   },
   {
     id: "water",
@@ -38,7 +38,7 @@ export const services = [
     id: "location",
     iconName: "MapPin",
     title: "Emplacement Central Idéal",
-    description: "Situé au 25 Boulevard de l'OUA, en plein cœur de Toamasina, juste en face de la station Total et à proximité immédiate de la mairie.",
+    description: "Situé au 25 Boulevard de l'OUA, en plein cœur de Toamasina, face directe à la Station TOTAL Gare Manguier et à proximité de Bazar kely & Hôtel de Ville (Mairie).",
     highlight: "Facile d'accès"
   },
   {
@@ -61,12 +61,12 @@ export const reasonsWhy = [
   {
     iconName: "Compass",
     title: "Emplacement Stratégique",
-    desc: "En plein cœur palpitant de Toamasina, face à la station Total, facilitant tous vos déplacements professionnels ou touristiques."
+    desc: "En plein cœur palpitant de Toamasina, face à la Station TOTAL Gare Manguier, facilitant tous vos déplacements professionnels ou touristiques."
   },
   {
     iconName: "Award",
     title: "Rapport Qualité / Prix Imbattable",
-    desc: "Des prestations hôtelières modernes (clim, Canal+, eau chaude, Wi-Fi) dès 55 000 Ar la nuit."
+    desc: "Des prestations hôtelières modernes (clim, Canal+, Netflix, eau chaude, Wi-Fi) dès 55 000 Ar la nuit."
   },
   {
     iconName: "Users",

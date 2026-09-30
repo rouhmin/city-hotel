@@ -4,14 +4,14 @@ export const hotelInfo = {
   country: "Madagascar",
   slogan: "Votre confort, notre priorité.",
   tagline: "Plus qu'un séjour... une expérience d'exception au cœur de Toamasina.",
-  address: "Rue Guynemer (Angle Av. de l'Indépendance), Toamasina",
-  fullAddress: "Rue Guynemer, Toamasina 501, Madagascar",
+  address: "25 Boulevard de l’OUA TOAMASINA",
+  fullAddress: "25 Boulevard de l’OUA, Toamasina 501, Madagascar",
   plusCode: "RCW5+5R9, Toamasina",
   coordinates: {
     lat: -18.1545625,
     lng: 49.4095625,
   },
-  landmarks: "Au cœur de Toamasina, Rue Guynemer, face à la Banque BOA Toamasina, à deux pas de l'Avenue de l'Indépendance et du Bazar Kely.",
+  landmarks: "Au cœur de Toamasina, 25 Boulevard de l’OUA, face directe à la Station TOTAL Gare Manguier, à proximité de Bazar kely & Hôtel de Ville (Mairie).",
   
   contacts: {
     phoneOrange: "+261 32 11 073 18",

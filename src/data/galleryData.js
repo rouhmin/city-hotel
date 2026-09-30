@@ -21,7 +21,7 @@ export const galleryItems = [
     src: "/images/hotel-facade.jpeg",
     title: "Façade Extérieure City Hôtel",
     subtitle: "25 Boulevard de l'OUA",
-    desc: "Bâtiment moderne de 4 étages au cœur de Toamasina, face à la station Total."
+    desc: "Bâtiment moderne de 4 étages au cœur de Toamasina, face à la Station TOTAL Gare Manguier."
   },
   {
     id: 3,

@@ -59,12 +59,12 @@ export default function LocationSection() {
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 text-xs text-[#444444]">
                   <Landmark className="w-4 h-4 text-[#C6A15B] shrink-0" />
-                  <span><strong>Face directe :</strong> Banque BOA Toamasina</span>
+                  <span><strong>Face directe :</strong> Station TOTAL Gare Manguier</span>
                 </div>
 
                 <div className="flex items-center gap-3 text-xs text-[#444444]">
                   <Building className="w-4 h-4 text-[#C6A15B] shrink-0" />
-                  <span><strong>Proximité :</strong> Bazar Kely & Avenue de l'Indépendance</span>
+                  <span><strong>Proximité :</strong> Bazar kely & Hôtel de Ville (Mairie)</span>
                 </div>
 
                 <div className="flex items-center gap-3 text-xs text-[#444444]">

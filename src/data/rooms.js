@@ -19,7 +19,7 @@ export const rooms = [
     ],
     features: [
       "Climatisation individuelle performante",
-      "Télévision écran plat avec chaînes Canal+",
+      "Télévision écran plat avec chaînes Canal+ & Netflix",
       "Wi-Fi gratuit illimité haut débit",
       "Salle de bain privative avec eau chaude",
       "Table de travail & rangements",
@@ -49,7 +49,7 @@ export const rooms = [
     ],
     features: [
       "Réfrigérateur privatif dans la chambre",
-      "Climatisation & TV Canal+ HD",
+      "Climatisation & TV Canal+ HD & Netflix",
       "Espace salon avec canapé confortable",
       "Wi-Fi haut débit & Eau chaude 24h/24",
       "Grande baie vitrée lumineuse",
@@ -65,8 +65,8 @@ export const rooms = [
     name: "Chambre Familiale Privative",
     category: "Famille",
     tagline: "Le confort chaleureux pour parents & enfants",
-    priceStartingAt: "Sur mesure",
-    priceRange: "Idéale famille",
+    priceStartingAt: "185 000 Ar",
+    priceRange: "185 000 Ar",
     period: "par nuit",
     capacity: "4 à 6 personnes",
     bedType: "1 grand lit double + Lit superposé en bois massif",
@@ -80,7 +80,7 @@ export const rooms = [
     ],
     features: [
       "1 lit double King Size + 1 lit superposé double/simple",
-      "Climatisation & TV Canal+",
+      "Climatisation & TV Canal+ avec Netflix",
       "Wi-Fi gratuit pour toute la famille",
       "Salle de bain privative avec eau chaude",
       "Lits d'appoint disponibles (+10 000 Ar / +20 000 Ar)",
@@ -113,7 +113,7 @@ export const rooms = [
       "Cuisine complète équipée : réfrigérateur, évier, plaques",
       "Balcon privatif avec vue panoramique (selon chambre)",
       "Coin salle à manger & vaisselle",
-      "Climatisation, Canal+, Wi-Fi & Eau chaude",
+      "Climatisation, Canal+, Netflix, Wi-Fi & Eau chaude",
       "Grande autonomie pour séjours courts ou moyens",
       "Variantes disponibles au 1er, 2e, 3e et 4e étage"
     ],

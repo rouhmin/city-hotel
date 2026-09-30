@@ -167,7 +167,7 @@ export default function ReservationCTA({ onOpenBookingModal }) {
               >
                 <option value="Chambre Standard (dès 55 000 Ar)">Chambre Standard (dès 55 000 Ar)</option>
                 <option value="Chambre Standard + Frigo & Vue (dès 80 000 Ar)">Chambre Standard + Frigo & Vue (dès 80 000 Ar)</option>
-                <option value="Chambre Familiale">Chambre Familiale (Lit double + superposé)</option>
+                <option value="Chambre Familiale (185 000 Ar)">Chambre Familiale (185 000 Ar)</option>
                 <option value="Studio avec Cuisine & Balcon">Studio avec Cuisine & Balcon (dès 150 000 Ar)</option>
                 <option value="Studio avec Cuisine sans Balcon">Studio avec Cuisine sans Balcon (120 000 Ar)</option>
               </select>

@@ -68,7 +68,7 @@ export default function Hero({ onOpenBookingModal }) {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="max-w-2xl text-base sm:text-lg text-white/85 font-light leading-relaxed mb-10"
         >
-          Situé au cœur de Toamasina, face à la station Total et à deux pas de la mairie. 
+          Situé au cœur de Toamasina, face à la Station TOTAL Gare Manguier et à deux pas de l'Hôtel de Ville (Mairie). 
           Un établissement pensé pour vous offrir tranquillité, propreté et grand confort, 
           adapté aux séjours en famille, en couple ou professionnels.
         </motion.p>
@@ -118,7 +118,7 @@ export default function Hero({ onOpenBookingModal }) {
         >
           <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3 flex items-center justify-center gap-2 text-xs sm:text-sm text-white/90">
             <CheckCircle2 className="w-4 h-4 text-[#C6A15B] shrink-0" />
-            <span>Clim & Canal+</span>
+            <span>Clim, Canal+ & Netflix</span>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3 flex items-center justify-center gap-2 text-xs sm:text-sm text-white/90">

@@ -53,7 +53,7 @@ export default function About({ onOpenBookingModal }) {
                     25 Boulevard de l'OUA, Toamasina
                   </h3>
                   <p className="text-xs text-white/80 mt-1">
-                    Face à la station Total • Proche de la mairie
+                    Face directe : Station TOTAL Gare Manguier • Proximité Bazar kely & Mairie
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function About({ onOpenBookingModal }) {
             
             <div className="space-y-4 text-base text-[#444444] leading-relaxed">
               <p className="text-lg font-medium text-[#171717]">
-                City Hôtel vous accueille en plein cœur de Toamasina, dans un emplacement idéal, face à la station Total et à proximité immédiate de la mairie.
+                City Hôtel vous accueille au 25 Boulevard de l'OUA à Toamasina, face directe à la Station TOTAL Gare Manguier et à proximité de Bazar kely & de l'Hôtel de Ville (Mairie).
               </p>
               
               <p>

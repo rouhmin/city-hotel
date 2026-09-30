@@ -38,7 +38,7 @@ export default function PricingTable({ onOpenBookingModal }) {
                   Inclus systématiquement dans chaque chambre
                 </h4>
                 <p className="text-xs sm:text-sm text-white/80">
-                  Climatisation • Télévision avec Canal+ • Eau Chaude 24h/24 • Wi-Fi Gratuit
+                  Climatisation • Télévision avec Canal+ & Netflix • Eau Chaude 24h/24 • Wi-Fi Gratuit
                 </p>
               </div>
             </div>

@@ -108,7 +108,7 @@ export default function Footer() {
             <div className="space-y-3 text-xs text-white/80">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C6A15B] shrink-0 mt-0.5" />
-                <span>25 Boulevard de l'OUA, Toamasina (face station Total)</span>
+                <span>25 Boulevard de l'OUA, Toamasina (face Station TOTAL Gare Manguier)</span>
               </div>
 
               <div className="flex items-center gap-2.5">
